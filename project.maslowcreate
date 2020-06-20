@@ -7,15 +7,27 @@
     "ioValues": [
         {
             "name": "tenon",
-            "ioValue": 10
+            "ioValue": 2
         },
         {
             "name": "spindle length",
-            "ioValue": 10
+            "ioValue": 50
+        },
+        {
+            "name": "widest spindle diameter ",
+            "ioValue": 5
         }
     ],
     "topLevel": true,
     "allAtoms": [
+        {
+            "atomType": "Input",
+            "name": "tenon",
+            "x": 0.013333333333333334,
+            "y": 0.4065573770491804,
+            "uniqueID": 865578,
+            "ioValues": []
+        },
         {
             "atomType": "Circle",
             "name": "Circle",
@@ -25,17 +37,9 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 5
+                    "ioValue": 2
                 }
             ]
-        },
-        {
-            "atomType": "Input",
-            "name": "tenon",
-            "x": 0.013333333333333334,
-            "y": 0.4524590163934426,
-            "uniqueID": 865578,
-            "ioValues": []
         },
         {
             "atomType": "Circle",
@@ -46,7 +50,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 5
                 }
             ]
         },
@@ -67,15 +71,23 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": -50
+                    "ioValue": -25
                 }
             ]
         },
         {
+            "atomType": "Input",
+            "name": "widest spindle diameter ",
+            "x": 0.013333333333333334,
+            "y": 0.6754098360655738,
+            "uniqueID": 693458,
+            "ioValues": []
+        },
+        {
             "atomType": "ShrinkWrap",
             "name": "Shrink Wrap",
-            "x": 0.5071031500926498,
-            "y": 0.5081967213114754,
+            "x": 0.5688696726374306,
+            "y": 0.4524590163934426,
             "uniqueID": 322436,
             "ioValues": [
                 {
@@ -102,6 +114,20 @@
             "closedSelection": 0
         },
         {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.17726991970352068,
+            "y": 0.7508196721311475,
+            "uniqueID": 691321,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 50
+                }
+            ],
+            "currentEquation": "-x/2"
+        },
+        {
             "atomType": "Circle",
             "name": "Circle",
             "x": 0.2933909820877085,
@@ -110,7 +136,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 5
+                    "ioValue": 2
                 }
             ]
         },
@@ -118,23 +144,9 @@
             "atomType": "Input",
             "name": "spindle length",
             "x": 0.013333333333333334,
-            "y": 0.7934426229508197,
+            "y": 0.8327868852459016,
             "uniqueID": 350146,
             "ioValues": []
-        },
-        {
-            "atomType": "Equation",
-            "name": "Equation",
-            "x": 0.17479925880172947,
-            "y": 0.8098360655737705,
-            "uniqueID": 195744,
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 1
-                }
-            ],
-            "currentEquation": "x /2"
         },
         {
             "atomType": "Translate",
@@ -153,9 +165,23 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 50
+                    "ioValue": 25
                 }
             ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.21124150710315007,
+            "y": 0.8688524590163935,
+            "uniqueID": 862564,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 50
+                }
+            ],
+            "currentEquation": "x/2"
         },
         {
             "atomType": "Output",
@@ -166,6 +192,20 @@
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 865578,
+            "ap2ID": 637879
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 865578,
+            "ap2ID": 246473
+        },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
@@ -188,6 +228,26 @@
             "ap2ID": 322436
         },
         {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 693458,
+            "ap2ID": 323985
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 322436
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 691321,
+            "ap2ID": 775971
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -195,14 +255,35 @@
             "ap2ID": 613874
         },
         {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 350146,
+            "ap2ID": 691321
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 350146,
+            "ap2ID": 862564
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "3D shape 3",
             "ap2Primary": false,
             "ap1ID": 613874,
             "ap2ID": 322436
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 862564,
+            "ap2ID": 613874
         }
     ],
     "fileTypeVersion": 1,
     "filetypeVersion": 1,
-    "circleSegmentSize": 2
+    "circleSegmentSize": "1"
 }
