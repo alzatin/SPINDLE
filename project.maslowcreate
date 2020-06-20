@@ -8,6 +8,10 @@
         {
             "name": "tenon",
             "ioValue": 10
+        },
+        {
+            "name": "spindle length",
+            "ioValue": 10
         }
     ],
     "topLevel": true,
@@ -47,6 +51,57 @@
             ]
         },
         {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.3755404570722668,
+            "y": 0.4131147540983607,
+            "uniqueID": 775971,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": -50
+                }
+            ]
+        },
+        {
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.5071031500926498,
+            "y": 0.5081967213114754,
+            "uniqueID": 322436,
+            "ioValues": [
+                {
+                    "name": "3D shape 4",
+                    "ioValue": ""
+                },
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 4",
+                    "ioValue": 10
+                }
+            ],
+            "closedSelection": 0
+        },
+        {
             "atomType": "Circle",
             "name": "Circle",
             "x": 0.2933909820877085,
@@ -60,36 +115,33 @@
             ]
         },
         {
-            "atomType": "Translate",
-            "name": "Translate",
-            "x": 0.4119827053736875,
-            "y": 0.6688524590163935,
-            "uniqueID": 613874,
+            "atomType": "Input",
+            "name": "spindle length",
+            "x": 0.013333333333333334,
+            "y": 0.7934426229508197,
+            "uniqueID": 350146,
+            "ioValues": []
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.17479925880172947,
+            "y": 0.8098360655737705,
+            "uniqueID": 195744,
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": ""
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0
+                    "name": "x",
+                    "ioValue": 1
                 }
-            ]
+            ],
+            "currentEquation": "x /2"
         },
         {
             "atomType": "Translate",
             "name": "Translate",
-            "x": 0.3767757875231625,
-            "y": 0.7475409836065573,
-            "uniqueID": 775971,
+            "x": 0.3810994441012971,
+            "y": 0.760655737704918,
+            "uniqueID": 613874,
             "ioValues": [
                 {
                     "name": "xDist",
@@ -101,7 +153,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 50
                 }
             ]
         },
@@ -120,6 +172,34 @@
             "ap2Primary": true,
             "ap1ID": 637879,
             "ap2ID": 775971
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 323985,
+            "ap2ID": 322436
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 775971,
+            "ap2ID": 322436
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 246473,
+            "ap2ID": 613874
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 3",
+            "ap2Primary": false,
+            "ap1ID": 613874,
+            "ap2ID": 322436
         }
     ],
     "fileTypeVersion": 1,
