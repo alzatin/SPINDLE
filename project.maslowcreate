@@ -1,0 +1,20 @@
+{
+    "atomType": "Molecule",
+    "name": "SPINDLE",
+    "x": 0,
+    "y": 0,
+    "uniqueID": 450228,
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.9876466954910439,
+            "y": 0.5,
+            "ioValues": []
+        }
+    ],
+    "allConnectors": [],
+    "fileTypeVersion": 1
+}
