@@ -4,9 +4,107 @@
     "x": 0,
     "y": 0,
     "uniqueID": 450228,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "tenon",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.29092032118591726,
+            "y": 0.3081967213114754,
+            "uniqueID": 637879,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ]
+        },
+        {
+            "atomType": "Input",
+            "name": "tenon",
+            "x": 0.013333333333333334,
+            "y": 0.4524590163934426,
+            "uniqueID": 865578,
+            "ioValues": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.21062384187770228,
+            "y": 0.4557377049180328,
+            "uniqueID": 323985,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.2933909820877085,
+            "y": 0.7278688524590164,
+            "uniqueID": 246473,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.4119827053736875,
+            "y": 0.6688524590163935,
+            "uniqueID": 613874,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.3767757875231625,
+            "y": 0.7475409836065573,
+            "uniqueID": 775971,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
         {
             "atomType": "Output",
             "name": "Output",
@@ -15,6 +113,16 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 637879,
+            "ap2ID": 775971
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 2
 }
