@@ -7,15 +7,15 @@
     "ioValues": [
         {
             "name": "tenon",
-            "ioValue": 2
-        },
-        {
-            "name": "widest spindle diameterÂ ",
-            "ioValue": 5
+            "ioValue": 0.75
         },
         {
             "name": "spindle length",
-            "ioValue": 50
+            "ioValue": 20
+        },
+        {
+            "name": "Widest Spindle diam",
+            "ioValue": 1
         }
     ],
     "topLevel": true,
@@ -37,7 +37,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 2
+                    "ioValue": 0.75
                 }
             ]
         },
@@ -50,7 +50,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 5
+                    "ioValue": 1
                 }
             ]
         },
@@ -71,16 +71,16 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": -25
+                    "ioValue": -10
                 }
             ]
         },
         {
             "atomType": "Input",
-            "name": "widest spindle diameterÂ ",
+            "name": "Widest Spindle diam",
             "x": 0.013333333333333334,
-            "y": 0.6754098360655738,
-            "uniqueID": 693458,
+            "y": 0.6324324324324324,
+            "uniqueID": 702225,
             "ioValues": []
         },
         {
@@ -122,7 +122,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 50
+                    "ioValue": 20
                 }
             ],
             "currentEquation": "-x/2"
@@ -136,7 +136,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 2
+                    "ioValue": 0.75
                 }
             ]
         },
@@ -165,7 +165,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 25
+                    "ioValue": 10
                 }
             ]
         },
@@ -178,7 +178,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 50
+                    "ioValue": 20
                 }
             ],
             "currentEquation": "x/2"
@@ -231,7 +231,7 @@
             "ap1Name": "number or geometry",
             "ap2Name": "diameter",
             "ap2Primary": false,
-            "ap1ID": 693458,
+            "ap1ID": 702225,
             "ap2ID": 323985
         },
         {
